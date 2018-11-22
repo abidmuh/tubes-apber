@@ -14,7 +14,7 @@ Creating accurate machine learning models capable of localizing and identifying 
 you can see [Tutorial Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
 ### What Do you think about Library tensorflow for Android Studio?
-Before started The project we must install some environment. in this project we use Ubuntu OS for make model. you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for Linux OS. for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/).
+Before started The project we must install some environment. in this project we use Ubuntu OS for custom our model (motorcycle).  for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/). After install anaconda you must install some library that you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for your environment.
 
 Okay Let's Start The Project
 1. Create Own Dataset "Motorcycle"
