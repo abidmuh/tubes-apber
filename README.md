@@ -21,12 +21,15 @@ Before started The project we must install some environment. in this project we 
 
 Okay Let's Start The Project
 Create Own Dataset "Motorcycle"
+
 **1. Collect Image**
 
 The our dataset use 140 images motorcycle then 100 images for data train and 40 image for data test. the environment image must in 4 pm until 6 pm o'clock.
+
 **2. Anotations Images**
 
 The anotations related about labeling each images. you can use software opensource [labelimg](https://github.com/tzutalin/labelImg).
+
 **3. Create Label Map (.pbtxt)**
 
 Classes need to be listed in the label map. Since we're only detecting motorcycle, the label map should contain only one item like the following
