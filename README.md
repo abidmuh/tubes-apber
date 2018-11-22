@@ -18,7 +18,14 @@ you can see [Tutorial Tensorflow Object Detection API](https://github.com/tensor
 
 Before started The project we must install some environment. in this project we use Ubuntu OS for custom our model (motorcycle).  for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/). After install anaconda you must install some library that you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for your environment. 
 
+Clone the Tensorflow Models directory
+In this tutorial, we're going to use resources in the Tensorflow models directory. we need to clone it from their Github repo:
+```
+# for example : /home/aufarm/Desktop/
 
+$git clone https://github.com/tensorflow/models.git
+```
+ 
 Okay Let's Start The Project
 Create Own Dataset "Motorcycle"
 
@@ -26,11 +33,15 @@ Create Own Dataset "Motorcycle"
 
 The our dataset use 140 images motorcycle then 100 images for data train and 40 image for data test. the environment image must in 4 pm until 6 pm o'clock.
 
-**2. Anotations Images**
+**2. Annotations Images**
 
-The anotations related about labeling each images. you can use software opensource [labelimg](https://github.com/tzutalin/labelImg).
+The anotations related about labeling each images. you can use software opensource [labelimg](https://github.com/tzutalin/labelImg). output from annotaion is file with format .xml
 
-**3. Create Label Map (.pbtxt)**
+**3. Convert file .xml to CSV**
+Now we need to convert these XML files to singular CSV files that can be then converted to the TFRecord files. To do this, we are going to make use of some of the code from datitran's github, with some minor changes. To begin, we're going to use xml_to_csv.py. you can see this article [convert file .xml to csv](https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/?completed=/custom-objects-tracking-tensorflow-object-detection-api-tutorial/).
+
+
+**4. Create Label Map (.pbtxt)**
 
 Classes need to be listed in the label map. Since we're only detecting motorcycle, the label map should contain only one item like the following
 ```
@@ -39,5 +50,10 @@ item{
   name: 'motor'
 }
 ```
-Note that id should start from 1, because 0 is a reserved id. Save this file as label_map.pbtxt in models/annotations/.
+Note that id should start from 1, because 0 is a reserved id. Save this file as object-detection.pbtxt in models/annotations/.
+
+
+
+
+
 ## Create Own Dataset "MotorCycle"
