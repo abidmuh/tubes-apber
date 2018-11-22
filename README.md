@@ -2,7 +2,7 @@
 The Huge Poject for Mobile Applicaiton "Motor Detection On Android"
 
 ## Motivation
-hello Guy's we are students from Telkom Universit and the project from major topic Mobile Application that create "Motor Detection on Android Using Tensorflow Library for android studio. hmm this topic is very interested for us.
+hello Guy's we are students from Telkom Universit and the project from major topic Mobile Application that create "Motor Detection on Android Using Tensorflow Library for Android Studio". hmm this topic is very interested for us.
 
 ### What Do you think about Machine Learning and Neural Network?
 
@@ -15,8 +15,8 @@ Creating accurate machine learning models capable of localizing and identifying 
 URL Tutorial Tensorflow Object Detection API : *https://github.com/tensorflow/models/tree/master/research/object_detection*
 
 ### What Do you think about Library tensorflow for Android Studio?
+Before started The project we must install some environment. in this project we use Ubuntu OS for make model. you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for Linux OS. for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/).
 
-Pre started The project we must install some environment. in this project we use Ubuntu OS for make model. we can see [installation] (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for Linux OS. the project using environment in anaconda we can see [Anaconda Instalation] (https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/).
 Okay Let's Start The Project
 1. Create Own Dataset "Motorcycle"
 2.
