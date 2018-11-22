@@ -14,10 +14,24 @@ Creating accurate machine learning models capable of localizing and identifying 
 you can see [Tutorial Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
 ### What Do you think about Library tensorflow for Android Studio?
-Before started The project we must install some environment. in this project we use Ubuntu OS for custom our model (motorcycle).  for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/). After install anaconda you must install some library that you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for your environment.
+
+
+Before started The project we must install some environment. in this project we use Ubuntu OS for custom our model (motorcycle).  for this project we use environment in anaconda you can see [Anaconda Instalation](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart/). After install anaconda you must install some library that you can see [introduce installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md/) for your environment. 
+
 
 Okay Let's Start The Project
-1. Create Own Dataset "Motorcycle"
-2.
-
+Create Own Dataset "Motorcycle"
+1. Collect Image
+The our dataset use 140 images motorcycle then 100 images for data train and 40 image for data test. the environment image must in 4 pm until 6 pm o'clock.
+2. Anotations Images
+The anotations related about labeling each images. you can use software opensource [labelimg](https://github.com/tzutalin/labelImg).
+3. Create Label Map (.pbtxt)
+Classes need to be listed in the label map. Since we're only detecting motorcycle, the label map should contain only one item like the following
+```
+item{
+  id: 1
+  name: 'motor'
+}
+```
+Note that id should start from 1, because 0 is a reserved id. Save this file as label_map.pbtxt in models/annotations/.
 ## Create Own Dataset "MotorCycle"
